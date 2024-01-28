@@ -4,20 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="index.css" type="text/css"/>
-    <title>JavaScript Fundamentals – Part 1</title>
+    <link rel="stylesheet" href="./guessMYNumber/style.css" />
+    <title>Guess My Number!</title>
   </head>
   <body>
-  <div class="grid">
-    <div class="h1">JavaScript Fundamentals – Part 1</div>
-    <div class="container"></div>
-  </div>
-  <div class="grid">
-    <div class="h1">JavaScript Fundamentals – Part 2</div>
-    <div class="container" id="newContainer"></div>
-  </div>
-
-  <script src="js/app.js"></script>
-  <script src="js/app2.js"></script>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again" onclick="again()">Again!</button>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check" onclick="guess()">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score:
+          <span class="score">10</span></p>
+        <p class="label-highScore">
+          🥇 high-Score: <span class="highScore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="./guessMYNumber/script.js"></script>
   </body>
 </html>

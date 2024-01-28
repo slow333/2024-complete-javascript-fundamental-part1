@@ -45,6 +45,7 @@ const calcTotalArr = (amount, percentage) => {
   }
   return total;
 }
+
 const young = {
   name: "kim", birthday: 1967, thisYear: new Date().getFullYear(), hasDriversLicense: false,
   calcAge: function () {
